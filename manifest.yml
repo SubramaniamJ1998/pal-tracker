@@ -2,7 +2,7 @@
 applications:
   - name: pal-tracker-Subramaniam
     path: build/libs/pal-tracker.jar
-    random-route: pal-tracker-Subramaniam.apps.chicken.pal.pivotal.io
+  - route: pal-tracker-rai.apps.pas-useast1.gcp-wipro.com
     env:
       WELCOME_MESSAGE: Hello from review environment
       JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
