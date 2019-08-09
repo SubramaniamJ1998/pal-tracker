@@ -1,11 +1,15 @@
-
+---
 applications:
-  - name: pal-tracker-Subramaniam
-    path: build/libs/pal-tracker.jar
-  - route: pal-tracker-subro.apps.pas-useast1.gcp-wipro.com
+  -
     env:
-      WELCOME_MESSAGE: Hello from review environment
-      JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
+      JBP_CONFIG_OPEN_JDK_JRE: "{ jre: { version: 11.+ } }"
+      WELCOME_MESSAGE: "Hello from the review environment"
       spring.profiles.active: cloud
-      services:
-        -Subramaniam-db
+    name: pal-tracker-Subramaniam
+    path: build/libs/pal-tracker.jar
+    routes:
+      -
+        route: pal-tracker-subro.apps.pas-useast1.gcp-wipro.com
+    services:
+      - Subramaniam-db
+
