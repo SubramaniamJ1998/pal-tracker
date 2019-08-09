@@ -8,3 +8,6 @@ deploy:
   space: $CF_SPACE
   manifest: manifest.yml       # (optional)  Defaults to manifest.yml.
   app_name: pal-tracker-subro                # (optional)
+  - run:
+      name: chmod permissions
+      command: chmod +x ./gradlew
