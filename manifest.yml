@@ -6,3 +6,6 @@ applications:
     env:
       WELCOME_MESSAGE: Hello from review environment
       JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
+      spring.profiles.active: cloud
+      services:
+        -Subramaniam-db
